@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Central de Sistemas - Even</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #E0F7FA;
+            color: #004D40;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 20px;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            background-color: #FFFFFF;
+            text-align: center;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            color: #00796B;
+            font-size: 32px;
+            margin-bottom: 30px;
+        }
+
+        .company-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            margin: 25px 0;
+            padding: 20px;
+            font-size: 18px;
+            color: #FFFFFF;
+            background-color: #00796B;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            text-align: center;
+            position: relative;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .company-button:hover {
+            background-color: #004D40;
+            transform: translateY(-3px);
+        }
+
+        .company-button:active {
+            transform: translateY(2px);
+        }
+
+        .link {
+            color: #00796B;
+            font-weight: bold;
+            text-decoration: none;
+            font-size: 18px;
+            display: block;
+            margin: 10px 0;
+            transition: color 0.3s;
+        }
+
+        .link:hover {
+            color: #004D40;
+        }
+
+        .section {
+            display: none;
+            padding-top: 20px;
+        }
+
+        .section.active {
+            display: block;
+            animation: fadeIn 0.5s ease;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .separator {
+            margin: 20px 0;
+            border-bottom: 2px solid #00796B;
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .training-link-container {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #004D40;
+            color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            display: inline-block;
+            width: 90%;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .training-link-container:hover {
+            transform: scale(1.05);
+            background-color: #00796B;
+        }
+
+        .training-link-container a {
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 18px;
+            background-color: #00796B;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .training-link-container a:hover {
+            background-color: #004D40;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Central de Sistemas - Even</h1>
+        
+        <!-- Botão para EvenMore -->
+        <button class="company-button" onclick="showSection('evenmore')">Acessar EvenMore</button>
+        
+        <!-- Linha de separação -->
+        <div class="separator"></div>
+
+        <!-- Botão para EvenVendas -->
+        <button class="company-button" onclick="showSection('evenvendas')">Acessar EvenVendas</button>
+
+        <div id="evenmore" class="section">
+            <h2>Acessos EvenMore</h2>
+            <p><a href="https://webmail.emci.com.br" class="link" target="_blank">Webmail</a></p>
+            <p><a href="https://sigav.even.com.br" class="link" target="_blank">SIGAV</a></p>
+            <p><a href="http://corretor.even.com.br" class="link" target="_blank">Portal do Corretor</a></p>
+            <p><a href="https://evenmore.hypnobox.com.br" class="link" target="_blank">Hypnobox</a></p>
+            <p><a href="mailto:tiimob@evenimob.com.br" class="link">Suporte TI</a></p>
+        </div>
+
+        <div id="evenvendas" class="section">
+            <h2>Acessos EvenVendas</h2>
+            <p><a href="https://webmail.evci.com.br" class="link" target="_blank">Webmail</a></p>
+            <p><a href="https://sigav.even.com.br" class="link" target="_blank">SIGAV</a></p>
+            <p><a href="http://corretor.even.com.br" class="link" target="_blank">Portal do Corretor</a></p>
+            <p><a href="https://even.hypnobox.com.br" class="link" target="_blank">Hypnobox</a></p>
+            <p><a href="mailto:tiimob@evenimob.com.br" class="link">Suporte TI</a></p>
+        </div>
+
+        <!-- Caixa do link de Treinamentos -->
+        <div class="training-link-container">
+            <h2>Treinamentos</h2>
+            <p>Para acessar os treinamentos da Even, clique no link abaixo:</p>
+            <a href="https://evenbr-my.sharepoint.com/personal/rnetto_even_com_br/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Frnetto%5Feven%5Fcom%5Fbr%2FDocuments%2FTREINAMENTOS&ga=1" target="_blank">Acessar Treinamentos</a>
+        </div>
+
+    </div>
+
+    <script>
+        function showSection(sectionId) {
+            // Oculta todas as seções
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => section.classList.remove('active'));
+
+            // Exibe a seção correspondente
+            document.getElementById(sectionId).classList.add('active');
+        }
+    </script>
+</body>
+</html>
