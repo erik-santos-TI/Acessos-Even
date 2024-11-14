@@ -30,7 +30,7 @@ Este projeto oferece uma interface simplificada, ideal para funcionários e cola
 
 1. **Clone o repositório**:
    ```bash
-   https://github.com/seu-usuario/central-de-sistemas-even.git
+    https://erik-santos-ti.github.io/Acessos-Even/
 Abra o arquivo index.html no navegador.
 
 Explore as opções: Clique em "Acessar EvenMore" ou "Acessar EvenVendas" para visualizar os links dos sistemas e suporte de TI correspondentes.
